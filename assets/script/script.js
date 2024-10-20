@@ -7,3 +7,21 @@ window.addEventListener('scroll', () => {
         header.classList.remove('scroll');
     }
 });
+
+
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 'auto', 
+    spaceBetween: 30,  
+    loop: true,             
+    speed: 900,           
+    autoplay: {
+        delay: 0, 
+        disableOnInteraction: false, 
+    },
+});
+
+
+
+
+
+
