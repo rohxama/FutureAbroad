@@ -314,6 +314,7 @@ nav a {
 #countries-section {
     text-align: center;
     padding: 50px 0;
+    height: 90vh;
 }
 
 #countries-section h2 {
@@ -372,4 +373,119 @@ nav a {
 
 .learn-more-btn:hover {
     background-color: darken(var(--primary-color), 10%);
+}
+
+
+#testimonials {
+    text-align: center;
+    padding: 50px 0;
+    background-color: var(--primary-color);
+}
+
+#testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: var(--white);
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.testimonial-card {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+}
+
+.testimonial-card p {
+    font-size: 18px;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.testimonial-card h4 {
+    font-size: 20px;
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+}
+
+.testimonial-card span {
+    font-size: 16px;
+    color: #999;
+}
+
+.highlight {
+    background-color: rgba(255, 223, 186, 0.8);
+    border-left: 5px solid var(--primary-color);
+}
+
+#footer {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 50px 0 0px;
+    margin-top: 150px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-about, .footer-links, .footer-contact {
+    width: 30%;
+}
+
+.footer-about h3, .footer-links h3, .footer-contact h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.footer-links ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact p {
+    margin-bottom: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: var(--white);
 }
