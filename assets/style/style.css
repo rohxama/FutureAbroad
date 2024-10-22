@@ -35,8 +35,12 @@ li {
     margin: auto;
 }
 
+.section-heading{
+    font: 600 36px/42px var(--body-font);
+    margin: 50px 0px;
+}
+
 header {
-    /* background-color: var(--primary-color); */
     padding: 25px 0px;
     position: fixed;
     top: 0;
@@ -119,7 +123,7 @@ nav a {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: var(--white); /* Text color */
+    color: var(--white);
     z-index: 2;
 }
 
@@ -140,13 +144,14 @@ nav a {
 
 .search-bar input {
     padding: 20px;
-    width: 600px;
+    max-width: 600px;
     font-size: 18px;
     border: 1px solid rgb(213, 212, 212);
     border-radius: 15px; 
     outline: none;
     background-color: transparent;
     color: var(--white);
+    width: 100%;
 }
 
 .search-bar input::placeholder{
@@ -190,11 +195,6 @@ nav a {
     padding: 50px 0;
     text-align: center;
     height: 70vh;
-}
-
-#services h2 {
-    font: 600 36px/42px var(--body-font);
-    margin: 50px 0px;
 }
 
 .service-container {
@@ -317,11 +317,6 @@ nav a {
     height: 90vh;
 }
 
-#countries-section h2 {
-    font: 600 36px/42px var(--body-font);
-    margin-bottom: 50px;
-}
-
 .countries-container {
     display: flex;
     justify-content: space-between;
@@ -382,15 +377,11 @@ nav a {
     background-color: var(--primary-color);
 }
 
-#testimonials h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: var(--white);
-}
 
 .testimonials-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -488,4 +479,60 @@ nav a {
 .footer-bottom p {
     margin: 0;
     color: var(--white);
+}
+
+@media(max-width: 1350px){
+    .container {
+        max-width: 1100px;
+    }
+}
+@media(max-width: 1125px){
+    .container {
+        max-width: 996px;
+    }
+}
+@media(max-width: 1000px){
+    .container {
+        max-width: 786px;
+    }
+}
+@media(max-width: 786px){
+    .container {
+        max-width: 590px;
+    }
+    .about-container {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .about-content {
+        max-width: 100%; 
+        text-align: center;
+    }
+    #countries-section {
+        height: fit-content;
+    }
+    .footer-container {
+       flex-direction: column;
+       gap: 30px;
+    }
+    .footer-about, .footer-links, .footer-contact {
+        width: 100%;
+    }
+    .search-bar button {
+        right: 10px;
+    }
+}
+@media(max-width: 650px){
+    .container {
+        max-width: 450px;
+    }
+    .countries-container, .testimonials-container, .service-container {
+        flex-direction: column;
+    }
+    .testimonial-card, .service-box {
+        width: 100%;
+    }
+    .service-container{
+        gap: 20px;
+    }
 }
