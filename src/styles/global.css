@@ -1,0 +1,30 @@
+:root {
+    --primary-color: #f4d03f;
+    --secondary-color: #333333;
+    --white: #fff;
+    --black: #000;
+    --logo-font: "Lobster", sans-serif;
+    --body-font: "Lato", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--body-font);
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+li {
+    list-style: none;
+}

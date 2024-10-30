@@ -366,11 +366,6 @@ nav a {
     text-decoration: none;
 }
 
-.learn-more-btn:hover {
-    background-color: darken(var(--primary-color), 10%);
-}
-
-
 #testimonials {
     text-align: center;
     padding: 50px 0;
@@ -419,7 +414,6 @@ nav a {
 
 .highlight {
     background-color: rgba(255, 223, 186, 0.8);
-    border-left: 5px solid var(--primary-color);
 }
 
 #footer {
@@ -459,10 +453,6 @@ nav a {
 .footer-links a {
     color: var(--white);
     text-decoration: none;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
 }
 
 .footer-contact p {

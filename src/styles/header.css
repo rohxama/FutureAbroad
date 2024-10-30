@@ -1,0 +1,46 @@
+header {
+    padding: 25px 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10; 
+}
+
+header.scroll {
+    background-color: var(--primary-color);
+    transition: background-color 0.3s ease;
+}
+
+header.scroll a {
+    color: var(--black);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    font-family: var(--logo-font);
+    font-size: 30px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    font: 600 16px/20px var(--body-font);
+}
+
+.account-bar {
+    display: flex;
+    gap: 30px;
+}
+
+.account-bar i {
+    margin-right: 7px;
+}
