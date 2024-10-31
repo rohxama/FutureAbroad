@@ -1,22 +1,22 @@
 
 import Link from 'next/link';
-import styles from '../styles/Header.css'; 
+// import styles from '../styles/Header.css'; 
 
-const Header = () => {
+export const Header = () => {
     return (
-        <header className={styles.header}>
-            <div className={styles.container}>
+        <header>
+            <div>
                 <nav>
-                    <Link href="/" className={styles.logo}>FutureAboard</Link>
+                    <Link href="/">FutureAboard</Link>
                     <div>
-                        <ul className={styles.navLinks}>
+                        <ul>
                             <li><Link href="#">Home</Link></li>
                             <li><Link href="#">Services</Link></li>
                             <li><Link href="#">Countries</Link></li>
                             <li><Link href="#">Contact Us</Link></li>
                         </ul>
                     </div>
-                    <div className={styles.accountBar}>
+                    <div>
                         <Link href="#"><i className="ri-login-box-line"></i>Log In</Link>
                         <Link href="#"><i className="ri-user-3-line"></i>Sign Up</Link>
                     </div>
@@ -25,5 +25,3 @@ const Header = () => {
         </header>
     );
 };
-
-export default Header;
