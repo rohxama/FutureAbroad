@@ -2,13 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@font-face {
-    font-family: 'Lobster';
-    src: url('/fonts/') format('truetype'); 
-    font-weight: normal;
-    font-style: normal;
-  }
-  .logo-font {
-    font-family: 'Lobster', sans-serif;
-  }
