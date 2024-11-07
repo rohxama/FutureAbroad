@@ -3,6 +3,7 @@ import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/Herosection";
 import { AboutSection } from "@/components/Aboutsection";
 import { ServicesSection } from "@/components/Services";
+import { CountriesSection } from "@/components/Countries";
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <ServicesSection />
+      <CountriesSection />
     </div>
   );
 }
