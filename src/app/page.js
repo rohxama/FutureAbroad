@@ -5,6 +5,7 @@ import { AboutSection } from "@/components/Aboutsection";
 import { ServicesSection } from "@/components/Services";
 import { CountriesSection } from "@/components/Countries";
 import { TestimonialsSection } from "@/components/Testimonials";
+import { Footer } from "@/components/Footer";
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <ServicesSection />
       <CountriesSection />
       <TestimonialsSection />
+      <Footer />
     </div>
   );
 }
