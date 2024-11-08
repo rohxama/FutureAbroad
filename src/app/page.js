@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/Herosection";
 import { AboutSection } from "@/components/Aboutsection";
+import { ServicesSection } from "@/components/Services";
 
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <AboutSection />
+      <ServicesSection />
     </div>
   );
 }
